@@ -9,6 +9,14 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 body{
     line-height:0 !important;
     color:#333333;
+    font-family: "微软雅黑";
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    user-select:none;
 }
 
 *{
@@ -92,6 +100,7 @@ ul > li {
 .h38{height:38px;}
 .h40{height:40px;}
 .h42{height:42px;}
+.h43{height:43px;}
 .h44{height:44px;}
 .h46{height:46px;}
 .h50{height:50px;}
@@ -144,6 +153,7 @@ ul > li {
 .h211{height:211px;}
 .h216{height:216px;}
 .h223{height:223px;}
+.h228{height:228px;}
 .h230{height:230px;}
 .h234{height:234px;}
 .h236{height:236px;}
@@ -162,6 +172,7 @@ ul > li {
 .h320{height:320px;}
 .h330{height:330px;}
 .h340{height:340px;}
+.h363{height:363px;}
 .h400{height:400px;}
 .h420{height:420px;}
 .h425{height:425px;}
@@ -236,9 +247,10 @@ ul > li {
 .w44{width:044px;}
 .w50{width:050px;}
 .w56{width:056px;}
-.w59h{width:59.5px;}
+.w59{width:059.5px;}
 .w60{width:060px;}
 .w63{width:063px;}
+.w64{width:064px;}
 .w69{width:069px;}
 .w72{width:072px;}
 .w75{width:075px;}
@@ -256,6 +268,7 @@ ul > li {
 .w140{width:140px;}
 .w146{width:146px;}
 .w148{width:148px;}
+.w150{width:150px;}
 .w152{width:152px;}
 .w160{width:160px;}
 .w167{width:167px;}
@@ -270,6 +283,7 @@ ul > li {
 .w219{width:219px;}
 .w220{width:220px;}
 .w222{width:222px;}
+.w228{width:228px;}
 .w230{width:230px;}
 .w232{width:232px;}
 .w235{width:235px;}
@@ -279,6 +293,7 @@ ul > li {
 .w280{width:280px;}
 .w290{width:290px;}
 .w300{width:300px;}
+.w324{width:324px;}
 .w330{width:330px;}
 .w375{width:375px;}
 .w390{width:390px;}
@@ -315,10 +330,13 @@ ul > li {
 .wb90{width: 90%;}
 .w100 {width: 100%;}
 /**字体大小 * 统一加大2个字号 */
+.fs16{font-size:  16px;}
 .fs18{font-size:  18px;}
 .fs20 {font-size: 20px;}
+.fs21 {font-size: 21px;}
 .fs22 {font-size: 22px;}
 .fs24 {font-size: 24px;}
+.fs25 {font-size: 25px;}
 .fs26 {font-size: 26px;}
 .fs28 {font-size: 28px;}
 .fs30 {font-size: 30px;}
@@ -374,6 +392,7 @@ ul > li {
 .mgTop14 {margin-top: 14px;}
 .mgTop12 {margin-top: 12px;}
 .mgTop10 {margin-top: 10px;}
+.mgTop15 {margin-top: 15px;}
 .mgTop7{margin-top:7.5px}
 .mgTop6{margin-top:6.5px}
 .mgTop1{margin-top:1px}
@@ -382,6 +401,7 @@ ul > li {
 /**右边距**/
 .mgRight8{margin-right:  08px;}
 .mgRight01{margin-right: -01px;}
+.mgRight10{margin-right: 10px;}
 .mgRight12{margin-right: 12px;}
 .mgRight16{margin-right: 16px;}
 .mgRight19{margin-right: 19px;}
@@ -395,18 +415,21 @@ ul > li {
 .mgRight50{margin-right: 67px;}
 /**下边距**/
 .mgBtm5{margin-bottom: 005px;}
+.mgBtm10{margin-bottom: 010px;}
 .mgBtm19{margin-bottom: 019px;}
 .mgBtm20{margin-bottom: 020px;}
 .mgBtm22{margin-bottom: 022px;}
 .mgBtm50{margin-bottom: 050px;}
 .mgBtm60{margin-bottom: 060px;}
 /**左边距**/
+.mgLeft3{margin-left: 03px;}
 .mgLeft4{margin-left: 04px;}
 .mgLeft6{margin-left: 06px;}
 .mgLeft8{margin-left: 08px;}
 .mgLeft12{margin-left:12px;}
 .mgLeft15{margin-left:15px;}
 .mgLeft16{margin-left:16px;}
+.mgLeft24{margin-left:24px;}
 .mgLeft30{margin-left:30px;}
 .mgLeft36{margin-left:36px;}
 .mgLeft33{margin-left:33px;}
@@ -419,6 +442,7 @@ ul > li {
 /** 水平居中 **/
 .mgAuto{margin: 0 auto}
 .mgA30{margin: 30px auto}
+.mgA05{margin: 05px auto 0}
 .mgA50{margin: 50px auto 0}
 .mgA0-30{margin: 0 30px}
 .mgA39{margin: 39px auto}
@@ -446,6 +470,7 @@ ul > li {
 .bgfc{background: #FCFCFC;}
 .bg33{background: #333;}
 .bgf2{background: #f2f2f2;}
+.bgf3{background: #f3f3f3;}
 .bg5D{background:#5DD15D}
 .bgE6{background:#E6E6E6}
 .bg188{background: #188AF5}
@@ -485,6 +510,7 @@ ul > li {
 .color-835{color:#835C3C}
 .color-E2c{color:#E2C67E}
 .color-75{color:#757475}
+.color-ff9{color:#ff9751}
 
 .phr{color:#cccccc !important}
 .red-rr{color:#df3849}
@@ -511,6 +537,7 @@ ul > li {
 /** 边距样式  **/
 .padTop1{padding-top:1px;}
 .padTop20{padding-top:20px;}
+.padleft10{padding-left:10px; }
 .padleft30{padding-left:30px; }
 .padleft60{padding-left: 060px; }
 .padleft65{padding-left:65px; }
@@ -521,6 +548,7 @@ ul > li {
 .padLR40{padding: 0 40px ; }
 .padLR60{padding: 1px 060px ; }
 .padLR20-64{padding: 20px 064px 0; }
+.padLR60-23{padding: 60px 060px 23px; }
 .padLR0{padding: 0; }
 .padLR12{padding: 10px 12px ; }
 .padRight15{padding-right:15px;}
@@ -537,6 +565,8 @@ ul > li {
 .borderBtmF8{border-bottom: 2px solid #F8901F}
 .borderAllF8{border:1px solid #F8901F !important;}
 .borderAll666{border:1px solid #666666;}
+.borderAllf3f{border:8px solid #f3f3f3;}
+.borderAllff9{border:1px solid #ff9751;}
 .borderAll835{border:2px solid #835C3C;}
 .borderAllF89{border:1px solid #F89327;}
 .borderAllddd{border:1px solid #dddddd;}
@@ -571,7 +601,10 @@ ul > li {
 }
 .hide{
     overflow:hidden;
-
+}
+/*超出滚动*/
+.auto{
+    overflow:auto;
 }
 .fixed{position: fixed;}
 
@@ -615,6 +648,7 @@ ul > li {
 .borderNone{border:none}
 /** 圆角 **/
 .boderRadiusB100{border-radius:100%;}
+.boderRadiusB50{border-radius:50%;}
 /** input输入框的placeholder样式 **/
 /*
 * 在 pysciter 里面无法识别
@@ -644,6 +678,7 @@ input{-webkit-appearance: none;}  *//*iphone及ipad下输入框默认内阴影*/
 
 /** 块级显示 **/
 .db{display: block }
+.dinlb{display:inline-block;}
 
 /** 定义占位符 **/
 /*<div class="h30"></div>*/
