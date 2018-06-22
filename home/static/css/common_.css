@@ -3,10 +3,12 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+
 }
 /*旋转屏幕时，字体大小调整的问题*/
 form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
     -webkit-text-size-adjust:100%;
+    margin:0;
 }
 
 html, body {
@@ -27,7 +29,6 @@ body{
     color: #333;
     background-color: #fff;
     line-height:0 !important;
-    color:#333333;
 }
 
 ul > li {
@@ -43,53 +44,51 @@ ul > li {
 .box{
     display: -moz-box;
     display: -webkit-box;
-    display: box;
+
 }
 .flx1{
     -moz-box-flex: 1;
     -webkit-box-flex: 1;
-    box-flex: 1;
+
 }
 .flx2{
     -moz-box-flex: 2;
     -webkit-box-flex:2;
-    box-flex:2
+
 }
 .flx3{
     -moz-box-flex: 3;
     -webkit-box-flex:3;
-    box-flex:3
+
 }
 .flx4{
     -moz-box-flex:4;
     -webkit-box-flex:4;
-    box-flex:4
+
 }
 .flx5{
     -moz-box-flex:5;
     -webkit-box-flex:5;
-    box-flex:5;
+
 }
 .flx6{
     -moz-box-flex:6;
     -webkit-box-flex:6;
-    box-flex:6;
+
 }
 
 .flx7{
     -moz-box-flex:7;
     -webkit-box-flex:7;
-    box-flex:7
 }
 .flx8{
     -moz-box-flex:8;
     -webkit-box-flex:8;
-    box-flex:8
 }
 .flx9{
     -moz-box-flex:9;
     -webkit-box-flex:9;
-    box-flex:9
+
 }
 
 
@@ -98,6 +97,7 @@ ul > li {
 
 /**高度样式**/
 .h40{height: 40px;}
+.h42{height: 42px;}
 .h60{height: 60px;}
 .h70{height: 70px;}
 .h80{height: 80px;}
@@ -110,73 +110,12 @@ ul > li {
 
 /**行高设置**/
 .lh40{line-height: 40px;}
+.lh42{line-height: 42px;}
 .lh55{line-height: 55px;}
 
 /*宽度*/
-.w10{width: 10px;}
-.w15{width: 15px;}
-.w22{width: 22px;}
-.w26{width: 26px;}
-.w27{width: 27px;}
-.w28{width: 28px;}
-.w30{width: 30px;}
-.w34{width: 34px;}
-.w35{width: 35px;}
-.w40{width: 40px;}
-.w42{width: 42px;}
-.w44{width: 44px;}
-.w50{width: 50px;}
-.w56{width: 56px;}
-.w60{width: 60px;}
-.w69{width: 69px;}
-.w72{width: 72px;}
-.w75{width: 75px;}
-.w80{width: 80px;}
-.w87{width: 87px;}
-.w90{width: 90px;}
-.w92{width: 92px;}
-.w94{width: 94px;}
-.w97{width: 97px;}
-.w105{width:105px}
-.w112{width:112px}
-.w118{width:118px}
-.w120{width:120px;}
-.w130{width:130px;}
-.w140{width:140px;}
-.w146{width:146px;}
-.w148{width:148px;}
-.w152{width:152px;}
-.w160{width:160px;}
-.w167{width:167px;}
-.w170{width:170px;}
-.w175{width:175px;}
-.w180{width:180px;}
-.w188{width:188px;}
-.w208{width:208px;}
-.w210{width:210px;}
-.w219{width:219px;}
-.w220{width:220px;}
-.w222{width:222px;}
-.w230{width:230px;}
-.w235{width:235px;}
-.w251{width:251px;}
-.w260{width:260px;}
-.w270{width:270px;}
-.w290{width:290px;}
-.w300{width:300px;}
-.w330{width:330px;}
-.w375{width:375px;}
-.w390{width:390px;}
-.w400{width:400px;}
-.w472{widtH:472px;}
-.w509{width:509px;}
-.w525{width:525px;}
-.w630{width:630px;}
-.w645{width:645px;}
-.w660{width:660px;}
-.w690{width:690px;}
-.w720{width:720px;}
-.w750{width:750px;}
+.w42{width:42px;}
+.w280{width:280px}
 .w1080{width:1080px;}
 .w421{width:421px;}
 
@@ -186,6 +125,7 @@ ul > li {
 
 .w100 {width: 100%;}
 /**字体大小 * 统一加大2个字号 */
+.fs14{font-size:  14px;}
 .fs18{font-size:  18px;}
 .fs20 {font-size: 20px;}
 .fs22 {font-size: 22px;}
@@ -250,6 +190,8 @@ ul > li {
 .mgLR4{margin:0 4px;}
 /**背景色**/
 .bg{background:#556098;}
+.bgf8{background:#F8901F;}
+.bgOrange-r{background:rgba(250, 160, 120, 0.8);}
 .bgOp{background:rgba(0,0,0,0);}
 .bgBlack{background:#000000;}
 .bgWhite{background:white !important;}
@@ -319,15 +261,8 @@ ul > li {
 .borderRight{border-right:1px solid #DEDEDE;}
 .borderTop{border-top:1px solid #DEDEDE;}
 .borderBtmF8{border-bottom: 2px solid #F8901F}
-.borderAllF8{border:1px solid #F8901F !important;}
-.borderAll666{border:1px solid #666666;}
-.borderAll835{border:2px solid #835C3C;}
-.borderAllddd{border:1px solid #dddddd;}
-.borderAlla2{border:1px solid #a2a2a2;}
-.borderAllFff{border:1px solid #ffffff;}
-.borderAllED{border:1px solid #ededed;}
-.borderAll33{border:1px solid #333333;}
-.borderAll37{border:1px solid #37C837;}
+.borderAllFE{border:1px solid #FE7646;}
+
 .borderInput{
     display:block;
     box-sizing:border-box;
@@ -370,13 +305,7 @@ ul > li {
 .right5{right:5px}
 .right10{right:10px}
 .right30{right:30px}
-.btm0{bottom:0}
-.btm60{bottom:60px}
-.btm78{bottom:78px}
-.btm30{bottom:30px}
-.btm94{bottom:94px}
-.btm98{bottom:98px}
-.btm180{bottom:180px !important}
+.btm80{bottom:80px}
 .borderRadius5{border-radius:5px}
 .borderRadiusTop10{border-radius:10px 10px 0px 0px;}
 .borderNone{border:none}
@@ -414,6 +343,6 @@ input{-webkit-appearance: none;}  /*iphone及ipad下输入框默认内阴影*/
 /*<div class="h30"></div>*/
 
 .priceBg{background: url('../img/home_price.jpg') center top repeat-x;}
-.menuOff{background: url('../img/tab_off.png') center top repeat-x;}
-.menuOn{background: url('../img/tab_on.png') center top repeat-x;}
+.menuOffBg{background: url('../img/tab_off.png') center top repeat-x;}
+.menuOnBg{background: url('../img/tab_on.png') center top repeat-x;}
 
