@@ -11,6 +11,10 @@ body{
     color:#333333;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 ul > li {
     list-style: none;
 }
@@ -91,6 +95,7 @@ ul > li {
 .h44{height:44px;}
 .h46{height:46px;}
 .h50{height:50px;}
+.h51{height:51px;}
 .h56{height:56px;}
 .h60{height:60px;}
 .h72{height:72px;}
@@ -129,6 +134,7 @@ ul > li {
 .h176{height:176px;}
 .h180{height:180px;}
 .h182{height:182px;}
+.h184{height:184px;}
 .h188{height:188px;}
 .h192{height:192px;}
 .h196{height:196px;}
@@ -189,6 +195,7 @@ ul > li {
 .lh44{line-height:044px;}
 .lh46{line-height:046px;}
 .lh50{line-height:050px;}
+.lh51{line-height:051px;}
 .lh54{line-height:054px;}
 .lh56{line-height:056px;}
 .lh60{line-height:060px;}
@@ -229,6 +236,7 @@ ul > li {
 .w44{width:044px;}
 .w50{width:050px;}
 .w56{width:056px;}
+.w59h{width:59.5px;}
 .w60{width:060px;}
 .w63{width:063px;}
 .w69{width:069px;}
@@ -253,6 +261,7 @@ ul > li {
 .w167{width:167px;}
 .w170{width:170px;}
 .w175{width:175px;}
+.w176{width:176px;}
 .w180{width:180px;}
 .w188{width:188px;}
 .w208{width:208px;}
@@ -262,7 +271,7 @@ ul > li {
 .w220{width:220px;}
 .w222{width:222px;}
 .w230{width:230px;}
-.w232{width:230px;}
+.w232{width:232px;}
 .w235{width:235px;}
 .w251{width:251px;}
 .w260{width:260px;}
@@ -284,6 +293,7 @@ ul > li {
 .w720{width:720px;}
 .w750{width:750px;}
 .w953{width:953px;}
+.w961{width:961px;}
 .w1080{width:1080px;}
 
 /*百分比宽度*/
@@ -395,6 +405,7 @@ ul > li {
 .mgLeft6{margin-left: 06px;}
 .mgLeft8{margin-left: 08px;}
 .mgLeft12{margin-left:12px;}
+.mgLeft15{margin-left:15px;}
 .mgLeft16{margin-left:16px;}
 .mgLeft30{margin-left:30px;}
 .mgLeft36{margin-left:36px;}
@@ -482,6 +493,7 @@ ul > li {
 .color-ccc{color:#cccccc;}
 .color-f8901f{color:#f8901f;}
 /** 字体加粗 **/
+.b1{font-weight:100}
 .b5{font-weight:500}
 .b6{font-weight:600}
 .b7{font-weight:700}
@@ -505,6 +517,7 @@ ul > li {
 .padLR8{padding: 0 08px ; }
 .padLR29{padding: 0 29px ; }
 .padLR30{padding: 1px 30px ; }
+.padLR15{padding: 0 15px}
 .padLR40{padding: 0 40px ; }
 .padLR60{padding: 1px 060px ; }
 .padLR20-64{padding: 20px 064px 0; }
@@ -638,8 +651,11 @@ input{-webkit-appearance: none;}  /*iphone及ipad下输入框默认内阴影*/
 
 /** 定义占位符 **/
 /*<div class="h30"></div>*/
+
+/** 背景图片 **/
 .buyBg{background: url('../img/home_price.jpg') center top repeat-x;}
 .cateBgY{background: url('../img/tab_off.png') center top repeat-x;}
 .cateBgN{background: url('../img/tab_on.png') center top repeat-x;}
+.btnBg{background: url('../img/btnbg3.jpg') center top repeat-x;}
 
 
