@@ -527,13 +527,7 @@ ul > li {
 .padRight30{padding-right:30px;}
 .padRight60{padding-right:60px;}
 .padBtm30{padding-bottom:30px }
-/** 弹性盒子 **/
-.flexBox{
-    display: flex;
-    flex-direction: column;
-}
-.flexRow{flex-direction:row;}
-.flexCln{flex-direction: column;}
+
 /** 分割线 **/
 .borderBtm{border-bottom:1px solid #DEDEDE;}
 /** 边框线样式 **/
@@ -622,12 +616,14 @@ ul > li {
 /** 圆角 **/
 .boderRadiusB100{border-radius:100%;}
 /** input输入框的placeholder样式 **/
+/*
+* 在 pysciter 里面无法识别
 #input div>input::-webkit-input-placeholder{font-size:032px}
 #inputAccount::-webkit-input-placeholder{font-size:053px}
 .rePhone::-webkit-input-placeholder{font-size:028px;font-weight:600}
 input::-webkit-input-placeholder{color:#cccccc}
 
-input{-webkit-appearance: none;}  /*iphone及ipad下输入框默认内阴影*/
+input{-webkit-appearance: none;}  *//*iphone及ipad下输入框默认内阴影*/
 .moreImg{ width: 16px;height:26px;}
 /* 层级 */
 .zindex01{z-index: -1}
