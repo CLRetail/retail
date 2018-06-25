@@ -3,109 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <title>支付</title>
+    <link href="../static/css/ionicons.css" rel="stylesheet" />
     <link href="../static/css/common.css" rel="stylesheet" />
+
+    <script src="../static/plugin/vue.min.js"></script>
 </head>
 <body>
-    <div class="w839 h944">
+    <div class="w839 h944 page box">
         <!-- 支付方式 -->
+        <div class="w140 h100 white fs24 tc flx1 hide">
 
+            <!-- 扫码付 -->
+            <div class="w100 h200 bR-TL20 bR-BL20 mgBtm02 psnR padTop26 padRight10 bgWhite color-333">
+
+                <!-- 图片和文字 -->
+                <div class="w80 h150 padTop96 mgLR25 h QcodePayBg-a">扫码付</div>
+
+
+            </div>
+
+            <!-- 会员支付 -->
+            <div class="w100 h200 bR-TL20 bR-BL20 mgBtm02 psnR padTop26 padRight10 bgFF9 left13">
+
+                <!-- 图片和文字 -->
+                <div class="w80 h150 padTop96 mgLR25 cardPayBg">会员卡支付</div>
+
+            </div>
+
+            <!-- 电子会员 -->
+            <div class="w100 h200 bR-TL20 bR-BL20 mgBtm02 psnR padTop26 padRight10 bgFF9 left13">
+
+                <!-- 图片和文字 -->
+                <div class="w80 h150 padTop96 mgLR25 phonePayBg">电子会员支付</div>
+
+            </div>
+        </div>
         <!-- 支付 -->
-        <div>
+        <div class="w700 flx1 bgWhite bR-BL20 bR-BR20">
             <!--扫码付-->
-            <div class="">
-                <h2 ><span>支付</span>￥<span class="total_money pay_money red">00.00</span></h2>
-                <!--支付宝支付-->
-                <div class="">
-                    <div class="imgbox text-center">
+            <div class="w100 h100 tc dn">
+                <h2 class="h200 lh200">
+                    <span class="fs37 padRight20">支付</span>
+                    <span class="fs56 red-r">￥00.00</span>
+                </h2>
+                <div class="w100 box">
+                    <!--支付宝支付-->
+                    <div class="wb50 flx1">
+                        <div class="w120 h120 fs29 mgTop35 mgAuto aliPayBg">
+                        </div>
+                        <div class="h54 lh54 blue-ali fs32">支付宝支付</div>
+                            <!--二维码图片-->
+                        <div class="w240 h240 padTop24 mgA20 borderAllf3f-w6 borderRadius6"></div>
                     </div>
-                    <div class="text">支付宝支付</div>
-                    <p>
-                        <!--二维码图片-->
-                    <div id="ali_qcode_url" class="orderFailhidden"></div>
-                    </p>
-                </div>
-                <!-- 微信支付 -->
-                <div class="">
-                    <div class="">
+                    <!-- 微信支付 -->
+                    <div class="wb50 flx1">
+                        <div class="w120 h120 tc fs29 mgTop35 mgAuto wxPayBg">
+                        </div>
+                        <div class="h54 lh54 green-wx fs32">微信支付</div>
+                            <!--二维码图片-->
+                        <div class="w240 h240 padTop24 mgA20 borderAllf3f-w6 borderRadius6"></div>
                     </div>
-                    <div class="">微信支付</div>
-                    <p>
-                        <!--二维码图片-->
-                    <div class=""></div>
-                    </p>
                 </div>
-                <div class=""></div>
+                <div class="mgTop136 red-rr fs37">错误提示信息</div>
             </div>
 
             <!--#会员支付-->
-            <div class="">
-                <h2 class=""><span>支付</span>￥<span class="total_money pay_money red">00.00</span></h2>
-                <div class="">
-                    <div class=""><span class="">康邻消费积分卡</span><span class="cardshow dis_no fr cardId"></span></div>
-                    <div class="">
-                        <div class="">
-                            <div class=""></div>
-                            <div>账户余额</div>
+            <div class="w100 h100 tc dn">
+
+                <!-- 支付信息 -->
+                <h2 class="h160 lh160">
+                    <span class="fs37 padRight20 b5">支付</span>
+                    <span class="fs56 red-r b6">￥00.00</span>
+                </h2>
+
+                <!-- 会员卡信息 -->
+                <div class="w516 h310 fs29 mgA white cardBg padTop38">
+
+                    <!-- 卡号 -->
+                    <div class="box">
+                        <div class="flx1 tl mgLeft36">康邻消费积分卡</div>
+                        <div class="flx1">10001006</div>
+                    </div>
+
+                    <div class="box mgTop97 h136">
+
+                        <!-- 余额 -->
+                        <div class="flx1">
+                            <div class="mgTop20 fs37">￥99.99</div>
+                            <div class="">账户余额</div>
                         </div>
-                        <div class="">
-                            <div class=""></div>
-                            <div>我的积分</div>
+
+                        <!-- 积分 -->
+                        <div class="flx1">
+                            <div class="mgTop20 fs37">9999</div>
+                            <div class="">我的积分</div>
                         </div>
                     </div>
+
                 </div>
                 <div class="">
-                    <div class="lh-194">请将会员卡对准刷卡区</div>
-                    <div class="lh-80 dis_no orderFailShow" style="color:rgb(239, 83, 80)"></div>
+                    <!-- 刷卡提示信息 -->
+                    <div class="lh194 tc fs37">请将会员卡对准刷卡区</div>
+
+                    <!-- 错误提示信息 -->
+                    <div class="lh80"></div>
                 </div>
-                <div class="cardshow dis_no"><a href="javascript:void(0);" onclick="cardPay()" class="qmbtn full">确认支付</a></div>
+
+                <!-- 按钮 -->
+                <div class="w580 h70 lh70 mgA-Top77 fs32 mgTop225 white borderRadius35 btnBg tc">确认支付</div>
             </div>
 
             <!--#电子会员-->
-            <div class="dis-table hidden text-center" id="phonepay">
-                <div class="prev">
-                    <div class="clearfix">
-                        <!--input-->
-                        <input id="txt_phone" type="text" class="cdinp dis_blo" style="height:66px;" placeholder="输入手机号">
-                        <div style="height:66px;" class="yzm">
-                            <input id="txt_yzm" type="text" class="cdinp fl" placeholder="输入验证码">
-                            <div class="btn_yzm  fr ">获取验证码</div>
-                            <div class="btn_yzm_no fr dis_no">已发送<span id="code_wait_time"></span></div>
-                        </div>
-
-                        <!--#keybord-->
-                        <div class="clearfix cdkeybord">
-                            <ul>
-                                <li><a href="javascript:void(0);" class="numclick" data-ins="1"><span class="nub">1</span></a></li>
-                                <li><a href="javascript:void(0);" class="numclick" data-ins="2"><span class="nub">2</span></a></li>
-                                <li><a href="javascript:void(0);" class="numclick" data-ins="3"><span class="nub">3</span></a></li>
-                                <li><a href="javascript:void(0);" class="numclick" data-ins="4"><span class="nub">4</span></a></li>
-                                <li><a href="javascript:void(0);" class="numclick" data-ins="5"><span class="nub">5</span></a></li>
-                                <li><a href="javascript:void(0);" class="numclick" data-ins="6"><span class="nub">6</span></a></li>
-                                <li><a href="javascript:void(0);" class="numclick" data-ins="7"><span class="nub">7</span></a></li>
-                                <li><a href="javascript:void(0);" class="numclick" data-ins="8"><span class="nub">8</span></a></li>
-                                <li><a href="javascript:void(0);" class="numclick" data-ins="9"><span class="nub">9</span></a></li>
-
-                                <li style="margin-left:172px;"><a href="javascript:void(0);" class="numclick" data-ins="0"><span class="nub">0</span></a></li>
-                                <li><a href="javascript:void(0);" class="backspace" style="background-color:#dedede"><i class="nub ion-backspace"></i></a></li>
-                            </ul>
-                        </div>
-                        <!--<p class="mar-t f-md">-->
-                        <!--#支付前通知 通过ID或CLASS选择器 增加或去除元素 hidden 应用-->
-                        <div class="nummsg enterPhoneShow dis_no">
-                            <div class="fl " id="sdye">余额&nbsp;<span class="color_gr">￥</span><span class="ye_money pay_money color_gr">0.00</span></div>
-                            <div class="fr" id="sdpay">支付<span class="red font_52">￥</span><span class="red total_money pay_money font_52">0.00</span></div>
-                        </div>
-                        <div class="nummsg red dis_no orderFailShow"></div>
-                        <!--</p>-->
-                    </div>
-                    <div class="clearfix btnbox">
-                        <div class="enterPhoneShow dis_no"><a href="javascript:void(0);" onclick="phonePay()" class="qmbtn full">确认支付</a></div>
-                    </div>
+            <div class="w100 h100 tc padTop66">
+                <!--手机号输入-->
+                <input type="text" class="db w516 h66 lh66 mgA fs37 ltSpc3 borderAll33-w2"  placeholder="输入手机号">
+                <!-- 验证码输入 -->
+                <div class="w516 h66 lh66 mgA28 box">
+                    <input type="text" class="flx1 w315 h100 fs37 ltSpc3 borderAll33-w2" placeholder="输入验证码">
+                    <div class="flx1 w200 h100 white fs29 bgFF9">获取验证码</div>
+                    <div class="flx1 w200 h100 fs29 dn">已发送<span></span></div>
                 </div>
+
+                <!-- 键盘 -->
+                <div class="w522 hide mgA50">
+                    <!-- 循环键盘1~9 -->
+                    <div v-for="v in 9"class="fl tc fs45 lh88 w168 h88 mgLeft3 mgRight3 mgBtm06 borderAllDE borderRadius10">{{v}}</div>
+                    <!-- 占位 -->
+                    <div class="fl tc w168 h88 mgLeft3 mgRight3 mgBtm06"></div>
+                    <div class="fl tc w168 h88 mgLeft3 mgRight3 mgBtm06 borderAllDE borderRadius10 fs45 lh88">0</div>
+                    <div class="fl tc w168 h88 mgLeft3 mgRight3 mgBtm06 borderAllDE borderRadius10 fs45 lh88 bgDE"><i class="ion-backspace"></i></div>
+                </div>
+
+                <!-- 电子会员信息 -->
+                <div class="w516 mgA73 fs37 box">
+                    <div class="flx1 h74 tl mgTop20">余额&nbsp;<span class="green-q">￥0.00</span></div>
+                    <div class="flx1 h74 tr">支付<span class="fs56 red-r">￥0.00</span></div>
+                </div>
+
+                <!-- 错误提示信息 -->
+                <div class=""></div>
+
+                <!-- 按钮 -->
+                <div class="w580 h70 lh70 mgA fs32 white borderRadius35 btnBg tc">确认支付</div>
+
             </div>
 
         </div>
 
     </div>
+    <script>
+        new Vue ({
+            el: '.page',
+            data: {
+                //展示的键盘
+                keyBord: [
+                ]
+            }
+        })
+    </script>
 </body>
 </html>

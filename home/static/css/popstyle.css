@@ -2,7 +2,14 @@
     border-bottom-right-radius: 20px !important;
     border-bottom-left-radius: 20px !important;
     border-top-left-radius: 20px !important;
+    background: transparent !important;
 }
-.layui-layer-close1{
+
+.layui-layer-setwin .layui-layer-close2{
+    right: -43px !important;
+    top: -43px !important;
+    width: 60px !important;
+    height: 60px !important;
+    background: url(../img/close.png) no-repeat !important;
 
 }

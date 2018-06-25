@@ -7,7 +7,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 }
 
 body{
-    line-height:0 !important;
+    /*line-height: 150%;*/
     color:#333333;
     font-family: "\u5fae\u8f6f\u96c5\u9ed1";
     -webkit-touch-callout:none;
@@ -114,8 +114,10 @@ ul > li {
 .h51{height:51px;}
 .h56{height:56px;}
 .h60{height:60px;}
+.h66{height:66px;}
 .h70{height:70px;}
 .h72{height:72px;}
+.h74{height:74px;}
 .h78{height:78px;}
 .h80{height:80px;}
 .h87{height:87px;}
@@ -139,12 +141,14 @@ ul > li {
 .h132{height:132px}
 .h135{height:135px;}
 .h136{height:136px;}
+.h138{height:138px;}
 .h140{height:140px;}
 .h144{height:144px;}
 .h146{height:146px;}
 .h150{height:150px;}
 .h151{height:151px;}
 .h152{height:152px;}
+.h160{height:160px;}
 .h164{height:164px;}
 .h167{height:167px;}
 .h170{height:170px;}
@@ -167,6 +171,7 @@ ul > li {
 .h234{height:234px;}
 .h236{height:236px;}
 .h238{height:238px;}
+.h240{height:240px;}
 .h242{height:242px;}
 .h245{height:245px;}
 .h247{height:247px;}
@@ -178,6 +183,7 @@ ul > li {
 .h285{height:285px;}
 .h286{height:286px;}
 .h300{height:300px;}
+.h310{height:310px;}
 .h320{height:320px;}
 .h330{height:330px;}
 .h340{height:340px;}
@@ -194,6 +200,7 @@ ul > li {
 .h720{height:720px;}
 .h750{height:750px;}
 .h786{height:786px;}
+.h944{height:944px;}
 .h1660{height:1660px;}
 .h1072{height:1072px;}
 .h1180{height:1180px;}
@@ -221,6 +228,7 @@ ul > li {
 .lh54{line-height:054px;}
 .lh56{line-height:056px;}
 .lh60{line-height:060px;}
+.lh66{line-height:066px;}
 .lh70{line-height:070px;}
 .lh72{line-height:072px;}
 .lh80{line-height:080px;}
@@ -240,8 +248,10 @@ ul > li {
 .lh136{line-height:136px;}
 .lh144{line-height:144px;}
 .lh146{line-height:146px;}
+.lh160{line-height:160px;}
 .lh164{line-height:164px;}
 .lh176{line-height:176px;}
+.lh194{line-height:194px;}
 .lh200{line-height:200px;}
 .lh210{line-height:210px;}
 .lh236{line-height:236px;}
@@ -305,12 +315,14 @@ ul > li {
 .w230{width:230px;}
 .w232{width:232px;}
 .w235{width:235px;}
+.w240{width:240px;}
 .w251{width:251px;}
 .w260{width:260px;}
 .w270{width:270px;}
 .w280{width:280px;}
 .w290{width:290px;}
 .w300{width:300px;}
+.w315{width:315px;}
 .w324{width:324px;}
 .w330{width:330px;}
 .w370{width:370px;}
@@ -321,6 +333,7 @@ ul > li {
 .w516{width:516px;}
 .w522{width:522px;}
 .w525{width:525px;}
+.w580{width:580px;}
 .w630{width:630px;}
 .w645{width:645px;}
 .w660{width:660px;}
@@ -375,6 +388,7 @@ ul > li {
 .fs45 {font-size: 45px;}
 .fs46 {font-size: 46px;}
 .fs54 {font-size: 54px;}
+.fs56 {font-size: 56px;}
 .fs58 {font-size: 58px;}
 .fs59 {font-size: 59px;}
 .fs62 {font-size: 62px;}
@@ -446,8 +460,9 @@ ul > li {
 .mgRight42{margin-right: 42px;}
 .mgRight50{margin-right: 67px;}
 /**下边距**/
-.mgBtm5{margin-bottom: 005px;}
-.mgBtm6{margin-bottom: 006px;}
+.mgBtm02{margin-bottom: 002px;}
+.mgBtm05{margin-bottom: 005px;}
+.mgBtm06{margin-bottom: 006px;}
 .mgBtm10{margin-bottom: 010px;}
 .mgBtm19{margin-bottom: 019px;}
 .mgBtm20{margin-bottom: 020px;}
@@ -479,7 +494,10 @@ ul > li {
 .mgAuto{margin: 0 auto}
 .mgA30{margin: 30px auto}
 .mgA05{margin: 05px auto 0}
+.mgA20{margin: 20px auto 0}
+.mgA28{margin: 28px auto 0}
 .mgA50{margin: 50px auto 0}
+.mgA73{margin: 73px auto 0}
 .mgA0-30{margin: 0 30px}
 .mgA39{margin: 39px auto}
 .mgA28{margin: 28px auto}
@@ -491,7 +509,9 @@ ul > li {
 .mgA175{margin: 0 175px auto}
 .mgA60{margin:  auto 060px}
 .mgA400{margin: 400px auto}
-.mgLR4{margin:0 04px;}
+.mgLR04{margin:0 04px;}
+.mgLR25{margin:0 25px;}
+.mgA-Top77{margin:77px auto  0;}
 /*上下居中*/
 .mgA{margin:auto;}
 /**背景色**/
@@ -537,6 +557,9 @@ ul > li {
 .green-rr{color:#5DD15D}
 .warn-rr{color:#DF821C}
 .white{color:white}
+.blue-ali{color:#0399e1}
+.green-wx{color:#2ec02c}
+.green-q{color:#299929}
 .bbb{color:#BBBbbb !important}
 .bdbd{color:#bdbdbd !important}
 .a2a2{color:#a2a2a2;}
@@ -579,6 +602,11 @@ ul > li {
 .pad60{padding:60px;}
 .padTop1{padding-top:1px;}
 .padTop20{padding-top:20px;}
+.padTop24{padding-top:24px;}
+.padTop26{padding-top:26px;}
+.padTop38{padding-top:38px;}
+.padTop66{padding-top:66px;}
+.padTop96{padding-top:96px;}
 .padleft10{padding-left:10px; }
 .padleft12{padding-left:12px; }
 .padleft20{padding-left:20px; }
@@ -599,6 +627,7 @@ ul > li {
 .padTB20{padding: 20px  0px; }
 .padRight10{padding-right:10px;}
 .padRight15{padding-right:15px;}
+.padRight20{padding-right:20px;}
 .padRight30{padding-right:30px;}
 .padRight60{padding-right:60px;}
 .padBtm30{padding-bottom:30px }
@@ -613,6 +642,7 @@ ul > li {
 .borderAllF8{border:1px solid #F8901F !important;}
 .borderAll666{border:1px solid #666666;}
 .borderAllf3f{border:8px solid #f3f3f3;}
+.borderAllf3f-w6{border:6px solid #f3f3f3;}
 .borderAllff9{border:1px solid #ff9751;}
 .borderAll835{border:2px solid #835C3C;}
 .borderAllF89{border:1px solid #F89327;}
@@ -668,6 +698,7 @@ ul > li {
 .top80{top:80px;}
 
 .left0{left:0;}
+.left13{left:13px;}
 .left30{left:30px}
 .left60{left:60px}
 .leftb25{left:32%}
@@ -690,6 +721,9 @@ ul > li {
 .borderRadius12{border-radius:12px;}
 .borderRadius15{ border-radius:15px;}
 .borderRadius16{  border-radius:16px;}
+.bR-BL20{  border-bottom-left-radius: 20px;}
+.bR-BR20{  border-bottom-right-radius: 20px;}
+.bR-TL20{  border-top-left-radius: 20px ;}
 .borderRadius5{border-radius:5px}
 .borderRadius6{border-radius:6px}
 .borderRadius30{border-radius:30px}
@@ -738,7 +772,17 @@ input{-webkit-appearance: none;}  *//*iphone及ipad下输入框默认内阴影*/
 .buyBg{background: url('../img/home_price.jpg') center top repeat-x;}
 .cateBgY{background: url('../img/tab_off.png') center top repeat-x;}
 .cateBgN{background: url('../img/tab_on.png') center top repeat-x;}
-.btnBg{background: url('../img/btnbg3.jpg') center top repeat-x;}
+.btnBg{background-image: linear-gradient(to top, #ff9766,#fd7e4b);}
+.aliPayBg{background: url(../img/120x120_02.png) center center no-repeat;}
+.wxPayBg{background: url(../img/120x120_01.png) center center no-repeat;}
+.cardBg{background: url(../img/card.png) center center;}
+
+.phonePayBg{background:url(../img/phonepay.png) no-repeat top;}
+.phonePayBg-a{background:url(../img/phonepay-a.png) no-repeat top;}
+.cardPayBg{background:url(../img/cardpay.png) no-repeat top;}
+.cardPayBg-a{background:url(../img/cardpay-a.png) no-repeat top;}
+.QcodePayBg{background:url(../img/Qcodepay.png) no-repeat top;}
+.QcodePayBg-a{background:url(../img/Qcodepay-a.png) no-repeat top;}
 
 /* 文本 */
 .ltSpc3{letter-spacing: 3px;}
