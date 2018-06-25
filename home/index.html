@@ -7,6 +7,7 @@
     <title>自动售货机(康邻)</title>
 
     <link href="static/css/common.css" rel="stylesheet" />
+    <link href="static/css/font-awesome.min.css" rel="stylesheet" />
     <link href="static/css/ionicons.css" rel="stylesheet" />
     <link href="static/css/popstyle.css" rel="stylesheet" />
 
@@ -52,7 +53,9 @@
         <div class="w100 h1072">
 
             <!-- 上一页 -->
-            <div class="w59 h100 fl"></div>
+            <div class="w59 h100 fl box bc color-fe7">
+                <i class="fa fa-chevron-left fa-4x mgLeft6"></i>
+            </div>
 
             <!-- 商品列表 -->
             <div class="w961  h100 padTop20 fl ">
@@ -151,7 +154,9 @@
             </div>
 
             <!-- 下一页 -->
-            <div class="w59 h100 fl"></div>
+            <div class="w59 h100 fl box bc color-fe7">
+                <i class="fa fa-chevron-right fa-4x mgLeft6"></i>
+            </div>
         </div>
 
         <!-- 底部 -->
@@ -165,10 +170,11 @@
             <!-- 按钮 -->
             <div class="flx1 h60 lh60 fs24 tc">
                 <!-- 购物车 -->
-                <div class="fr w222 lh60 mgTop15 borderRadius30 btnBg mgLeft15">
+                <div class="fr w222 mgTop15 borderRadius30 btnBg mgLeft15">
                     <!--<span class="fl ion-ios-cart fs26"></span>-->
                     <span class="fl mgLeft36">&#xe618;</span>
-                    <span class="fl mgLeft6">购物车</span>
+                    <span class="fl mgLeft6" onclick="openPopWin('pop_cart',['878px','1660px'])">购物车</span>
+
                     <span class="fl w30 h30 lh30 fs16 color-333 mgTop15 boderRadiusB50 bgWhite dinlb mgLeft6">0</span>
                 </div>
                 <!-- 会员充值 -->
@@ -203,7 +209,7 @@
     //                 {name:'全部',id:'',selected:true},
     //                 {name:'饮品饮料',id:'',selected:false},
     //                 {name:'日化用品',id:'',selected:false},
-    //                 {name:'药物',id:'',selected:false},
+    //                 {name:'药物',id:'',selected:false}
     //             ];
     //
     //             this.cate=data;

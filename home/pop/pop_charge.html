@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员充值</title>
+
+    <link href="../static/css/ionicons.css" rel="stylesheet" />
+    <link href="../static/css/common.css" rel="stylesheet" />
+
+    <script src="../static/plugin/vue.min.js"></script>
+</head>
+<body>
+    <div class="pad60 page">
+        <!-- 步骤说明 -->
+        <div class="h32 lh32 tc fs21">
+            请刷会员卡或输入手机号<span class="color-ffc">>></span>选择金额并确认<span class="color-ffc">>></span>扫码支付
+        </div>
+
+        <!-- 输入框 -->
+        <div class="mgTop33">
+            <input class="h70 lh70 fs37 ltSpc3 w100 borderAll33-w2" type="text" placeholder=" 输入手机号" />
+        </div>
+
+        <!-- 充值金额 -->
+        <div class="mgTop30 hide">
+            <!-- 此处循环充值金额 -->
+            <div class="fl w182 h96 borderRadius15 borderAllED-w2 mgTop20 btnBg white">
+                <div class="tc mgTop15 fs28 lh26">50元</div>
+                <div class="tc mgTop14 fs24 lh24">售价50.00</div>
+            </div>
+            <div class="fl w182 h96 borderRadius15 borderAllED-w2 mgTop20 mgLeft17">
+                <div class="tc mgTop15 fs28 lh26">50元</div>
+                <div class="tc mgTop14 fs24 lh24">售价50.00</div>
+            </div>
+            <div class="fl w182 h96 borderRadius15 borderAllED-w2 mgTop20 mgLeft17">
+                <div class="tc mgTop15 fs28 lh26">50元</div>
+                <div class="tc mgTop14 fs24 lh24">售价50.00</div>
+            </div>
+            <div class="fl w182 h96 borderRadius15 borderAllED-w2 mgTop20">
+                <div class="tc mgTop15 fs28 lh26">50元</div>
+                <div class="tc mgTop14 fs24 lh24">售价50.00</div>
+            </div>
+            <div class="fl w182 h96 borderRadius15 borderAllED-w2 mgTop20 mgLeft17">
+                <div class="tc mgTop15 fs28 lh26">50元</div>
+                <div class="tc mgTop14 fs24 lh24">售价50.00</div>
+            </div>
+            <div class="fl w182 h96 borderRadius15 borderAllED-w2 mgTop20 mgLeft17">
+                <div class="tc mgTop15 fs28 lh26">50元</div>
+                <div class="tc mgTop14 fs24 lh24">售价50.00</div>
+            </div>
+        </div>
+
+        <!-- 键盘 -->
+        <div class="w522 hide mgA50">
+            <!-- 循环键盘1~9 -->
+            <div v-for="v in 9"class="fl tc fs45 lh88 w168 h88 mgLeft3 mgRight3 mgBtm6 borderAllDE borderRadius10">{{v}}</div>
+            <!-- 占位 -->
+            <div class="fl tc w168 h88 mgLeft3 mgRight3 mgBtm6"></div>
+            <div class="fl tc w168 h88 mgLeft3 mgRight3 mgBtm6 borderAllDE borderRadius10 fs45 lh88">0</div>
+            <div class="fl tc w168 h88 mgLeft3 mgRight3 mgBtm6 borderAllDE borderRadius10 fs45 lh88 bgDE"><i class="ion-backspace"></i></div>
+        </div>
+
+        <!-- 按钮 -->
+        <div class="h70 lh70 fs32 mgTop44 white borderRadius35 btnBg tc">结算</div>
+
+    </div>
+    <script>
+        new Vue ({
+            el: '.page',
+            data: {
+                //展示的键盘
+                keyBord: [
+                ]
+            }
+        })
+    </script>
+</body>
+</html>

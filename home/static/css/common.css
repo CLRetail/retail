@@ -9,7 +9,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 body{
     line-height:0 !important;
     color:#333333;
-    font-family: "微软雅黑";
+    font-family: "\u5fae\u8f6f\u96c5\u9ed1";
     -webkit-touch-callout:none;
     -webkit-user-select:none;
     -khtml-user-select:none;
@@ -18,6 +18,11 @@ body{
     -o-user-select:none;
     user-select:none;
 }
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ccc;
+}
+
 
 *{
     box-sizing: border-box;
@@ -36,7 +41,9 @@ ul > li {
 .box{
     display: -moz-box;
     display: -webkit-box;
-
+}
+.bc{
+    -webkit-box-align: center;
 }
 .flx1{
     -moz-box-flex: 1;
@@ -107,6 +114,7 @@ ul > li {
 .h51{height:51px;}
 .h56{height:56px;}
 .h60{height:60px;}
+.h70{height:70px;}
 .h72{height:72px;}
 .h78{height:78px;}
 .h80{height:80px;}
@@ -114,6 +122,7 @@ ul > li {
 .h88{height:88px;}
 .h90{height:90px;}
 .h94{height:94px;}
+.h96{height:96px;}
 .h97{height:97px;}
 .h98{height:98px;}
 .hh100{height:100px;}
@@ -184,6 +193,8 @@ ul > li {
 .h646{height:646px;}
 .h720{height:720px;}
 .h750{height:750px;}
+.h786{height:786px;}
+.h1660{height:1660px;}
 .h1072{height:1072px;}
 .h1180{height:1180px;}
 .h1920{height:1920px;}
@@ -210,6 +221,7 @@ ul > li {
 .lh54{line-height:054px;}
 .lh56{line-height:056px;}
 .lh60{line-height:060px;}
+.lh70{line-height:070px;}
 .lh72{line-height:072px;}
 .lh80{line-height:080px;}
 .lh88{line-height:088px;}
@@ -222,6 +234,7 @@ ul > li {
 .lh110{line-height:110px;}
 .lh112{line-height:112px;}
 .lh118{line-height:118px;}
+.lh120{line-height:120px;}
 .lh130{line-height:130px;}
 .lh132{line-height:132px;}
 .lh136{line-height:136px;}
@@ -261,21 +274,26 @@ ul > li {
 .w94{width:094px;}
 .w97{width:097px;}
 .w105{width:105px}
+.w107{width:107px}
 .w112{width:112px}
 .w118{width:118px}
 .w120{width:120px;}
 .w130{width:130px;}
+.w136{width:136px;}
 .w140{width:140px;}
 .w146{width:146px;}
 .w148{width:148px;}
 .w150{width:150px;}
 .w152{width:152px;}
+.w154{width:154px;}
 .w160{width:160px;}
 .w167{width:167px;}
+.w168{width:168px;}
 .w170{width:170px;}
 .w175{width:175px;}
 .w176{width:176px;}
 .w180{width:180px;}
+.w182{width:182px;}
 .w188{width:188px;}
 .w208{width:208px;}
 .w200{width:200px;}
@@ -295,18 +313,24 @@ ul > li {
 .w300{width:300px;}
 .w324{width:324px;}
 .w330{width:330px;}
-.w375{width:375px;}
+.w370{width:370px;}
 .w390{width:390px;}
 .w400{width:400px;}
 .w472{widtH:472px;}
 .w509{width:509px;}
+.w516{width:516px;}
+.w522{width:522px;}
 .w525{width:525px;}
 .w630{width:630px;}
 .w645{width:645px;}
 .w660{width:660px;}
 .w690{width:690px;}
+.w700{width:700px;}
 .w720{width:720px;}
 .w750{width:750px;}
+.w839{width:839px;}
+.w878{width:878px;}
+.w944{width:944px;}
 .w953{width:953px;}
 .w961{width:961px;}
 .w1080{width:1080px;}
@@ -339,11 +363,13 @@ ul > li {
 .fs25 {font-size: 25px;}
 .fs26 {font-size: 26px;}
 .fs28 {font-size: 28px;}
+.fs29 {font-size: 29px;}
 .fs30 {font-size: 30px;}
 .fs32 {font-size: 32px;}
 .fs34 {font-size: 34px;}
 .fs35 {font-size: 35px;}
 .fs36 {font-size: 36px;}
+.fs37 {font-size: 37px;}
 .fs38 {font-size: 38px;}
 .fs40 {font-size: 40px;}
 .fs45 {font-size: 45px;}
@@ -353,6 +379,7 @@ ul > li {
 .fs59 {font-size: 59px;}
 .fs62 {font-size: 62px;}
 .fs65 {font-size: 65px;}
+.fs70 {font-size: 70px;}
 .block {display: block;}
 
 /** 上边距 **/
@@ -372,6 +399,7 @@ ul > li {
 .mgTop47 {margin-top: 47px;}
 .mgTop46 {margin-top: 46px;}
 .mgTop45 {margin-top: 45px;}
+.mgTop44 {margin-top: 44px;}
 .mgTop42 {margin-top: 42px;}
 .mgTop40 {margin-top: 40px;}
 .mgTop39 {margin-top: 39px;}
@@ -393,16 +421,20 @@ ul > li {
 .mgTop12 {margin-top: 12px;}
 .mgTop10 {margin-top: 10px;}
 .mgTop15 {margin-top: 15px;}
+.mgTop30 {margin-top: 30px;}
 .mgTop7{margin-top:7.5px}
 .mgTop6{margin-top:6.5px}
 .mgTop1{margin-top:1px}
 .mgTop2{margin-top:2px}
 .mgTop4{margin-top:04px}
 /**右边距**/
+.mgRight3{margin-right:  03px;}
+.mgRight6{margin-right:  06px;}
 .mgRight8{margin-right:  08px;}
 .mgRight01{margin-right: -01px;}
 .mgRight10{margin-right: 10px;}
 .mgRight12{margin-right: 12px;}
+.mgRight14{margin-right: 14px;}
 .mgRight16{margin-right: 16px;}
 .mgRight19{margin-right: 19px;}
 .mgRight20{margin-right: 20px;}
@@ -415,6 +447,7 @@ ul > li {
 .mgRight50{margin-right: 67px;}
 /**下边距**/
 .mgBtm5{margin-bottom: 005px;}
+.mgBtm6{margin-bottom: 006px;}
 .mgBtm10{margin-bottom: 010px;}
 .mgBtm19{margin-bottom: 019px;}
 .mgBtm20{margin-bottom: 020px;}
@@ -427,8 +460,11 @@ ul > li {
 .mgLeft6{margin-left: 06px;}
 .mgLeft8{margin-left: 08px;}
 .mgLeft12{margin-left:12px;}
+.mgLeft14{margin-left:14px;}
 .mgLeft15{margin-left:15px;}
 .mgLeft16{margin-left:16px;}
+.mgLeft17{margin-left:17px;}
+.mgLeft20{margin-left:20px;}
 .mgLeft24{margin-left:24px;}
 .mgLeft30{margin-left:30px;}
 .mgLeft36{margin-left:36px;}
@@ -456,8 +492,11 @@ ul > li {
 .mgA60{margin:  auto 060px}
 .mgA400{margin: 400px auto}
 .mgLR4{margin:0 04px;}
+/*上下居中*/
+.mgA{margin:auto;}
 /**背景色**/
 .bg{background:#FECA23;}
+.bgDE{background:#DEDEDE;}
 .bgFB{background:#FBB393;}
 .bgf8{background:#F8901F;}
 .bg55{background:#556098;}
@@ -510,6 +549,8 @@ ul > li {
 .color-835{color:#835C3C}
 .color-E2c{color:#E2C67E}
 .color-75{color:#757475}
+.color-fe7{color:#FE7646}
+.color-ffc{color:#ffc20e}
 .color-ff9{color:#ff9751}
 
 .phr{color:#cccccc !important}
@@ -535,9 +576,12 @@ ul > li {
 .fl {float: left;}
 .fr {float: right !important;}
 /** 边距样式  **/
+.pad60{padding:60px;}
 .padTop1{padding-top:1px;}
 .padTop20{padding-top:20px;}
 .padleft10{padding-left:10px; }
+.padleft12{padding-left:12px; }
+.padleft20{padding-left:20px; }
 .padleft30{padding-left:30px; }
 .padleft60{padding-left: 060px; }
 .padleft65{padding-left:65px; }
@@ -549,8 +593,11 @@ ul > li {
 .padLR60{padding: 1px 060px ; }
 .padLR20-64{padding: 20px 064px 0; }
 .padLR60-23{padding: 60px 060px 23px; }
+.padLR60-30{padding: 60px 060px 30px; }
 .padLR0{padding: 0; }
-.padLR12{padding: 10px 12px ; }
+.padLR12{padding: 10px 12px; }
+.padTB20{padding: 20px  0px; }
+.padRight10{padding-right:10px;}
 .padRight15{padding-right:15px;}
 .padRight30{padding-right:30px;}
 .padRight60{padding-right:60px;}
@@ -572,8 +619,11 @@ ul > li {
 .borderAllddd{border:1px solid #dddddd;}
 .borderAlla2{border:1px solid #a2a2a2;}
 .borderAllFff{border:1px solid #ffffff;}
+.borderAllDE{border:1px solid #dedede;}
 .borderAllED{border:1px solid #ededed;}
+.borderAllED-w2{border:2px solid #ededed;}
 .borderAll33{border:1px solid #333333;}
+.borderAll33-w2{border:2px solid #333333;}
 .borderAll37{border:1px solid #37C837;}
 .borderInput{
     display:block;
@@ -643,6 +693,7 @@ ul > li {
 .borderRadius5{border-radius:5px}
 .borderRadius6{border-radius:6px}
 .borderRadius30{border-radius:30px}
+.borderRadius35{border-radius:35px}
 
 .topBorderRadius12{border-radius: 12px 12px 0 0;}
 .borderNone{border:none}
@@ -689,4 +740,5 @@ input{-webkit-appearance: none;}  *//*iphone及ipad下输入框默认内阴影*/
 .cateBgN{background: url('../img/tab_on.png') center top repeat-x;}
 .btnBg{background: url('../img/btnbg3.jpg') center top repeat-x;}
 
-
+/* 文本 */
+.ltSpc3{letter-spacing: 3px;}

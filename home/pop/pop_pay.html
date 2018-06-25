@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>支付</title>
+    <link href="../static/css/common.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="w839 h944">
+        <!-- 支付方式 -->
+
+        <!-- 支付 -->
+        <div>
+            <!--扫码付-->
+            <div class="">
+                <h2 ><span>支付</span>￥<span class="total_money pay_money red">00.00</span></h2>
+                <!--支付宝支付-->
+                <div class="">
+                    <div class="imgbox text-center">
+                    </div>
+                    <div class="text">支付宝支付</div>
+                    <p>
+                        <!--二维码图片-->
+                    <div id="ali_qcode_url" class="orderFailhidden"></div>
+                    </p>
+                </div>
+                <!-- 微信支付 -->
+                <div class="">
+                    <div class="">
+                    </div>
+                    <div class="">微信支付</div>
+                    <p>
+                        <!--二维码图片-->
+                    <div class=""></div>
+                    </p>
+                </div>
+                <div class=""></div>
+            </div>
+
+            <!--#会员支付-->
+            <div class="">
+                <h2 class=""><span>支付</span>￥<span class="total_money pay_money red">00.00</span></h2>
+                <div class="">
+                    <div class=""><span class="">康邻消费积分卡</span><span class="cardshow dis_no fr cardId"></span></div>
+                    <div class="">
+                        <div class="">
+                            <div class=""></div>
+                            <div>账户余额</div>
+                        </div>
+                        <div class="">
+                            <div class=""></div>
+                            <div>我的积分</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="lh-194">请将会员卡对准刷卡区</div>
+                    <div class="lh-80 dis_no orderFailShow" style="color:rgb(239, 83, 80)"></div>
+                </div>
+                <div class="cardshow dis_no"><a href="javascript:void(0);" onclick="cardPay()" class="qmbtn full">确认支付</a></div>
+            </div>
+
+            <!--#电子会员-->
+            <div class="dis-table hidden text-center" id="phonepay">
+                <div class="prev">
+                    <div class="clearfix">
+                        <!--input-->
+                        <input id="txt_phone" type="text" class="cdinp dis_blo" style="height:66px;" placeholder="输入手机号">
+                        <div style="height:66px;" class="yzm">
+                            <input id="txt_yzm" type="text" class="cdinp fl" placeholder="输入验证码">
+                            <div class="btn_yzm  fr ">获取验证码</div>
+                            <div class="btn_yzm_no fr dis_no">已发送<span id="code_wait_time"></span></div>
+                        </div>
+
+                        <!--#keybord-->
+                        <div class="clearfix cdkeybord">
+                            <ul>
+                                <li><a href="javascript:void(0);" class="numclick" data-ins="1"><span class="nub">1</span></a></li>
+                                <li><a href="javascript:void(0);" class="numclick" data-ins="2"><span class="nub">2</span></a></li>
+                                <li><a href="javascript:void(0);" class="numclick" data-ins="3"><span class="nub">3</span></a></li>
+                                <li><a href="javascript:void(0);" class="numclick" data-ins="4"><span class="nub">4</span></a></li>
+                                <li><a href="javascript:void(0);" class="numclick" data-ins="5"><span class="nub">5</span></a></li>
+                                <li><a href="javascript:void(0);" class="numclick" data-ins="6"><span class="nub">6</span></a></li>
+                                <li><a href="javascript:void(0);" class="numclick" data-ins="7"><span class="nub">7</span></a></li>
+                                <li><a href="javascript:void(0);" class="numclick" data-ins="8"><span class="nub">8</span></a></li>
+                                <li><a href="javascript:void(0);" class="numclick" data-ins="9"><span class="nub">9</span></a></li>
+
+                                <li style="margin-left:172px;"><a href="javascript:void(0);" class="numclick" data-ins="0"><span class="nub">0</span></a></li>
+                                <li><a href="javascript:void(0);" class="backspace" style="background-color:#dedede"><i class="nub ion-backspace"></i></a></li>
+                            </ul>
+                        </div>
+                        <!--<p class="mar-t f-md">-->
+                        <!--#支付前通知 通过ID或CLASS选择器 增加或去除元素 hidden 应用-->
+                        <div class="nummsg enterPhoneShow dis_no">
+                            <div class="fl " id="sdye">余额&nbsp;<span class="color_gr">￥</span><span class="ye_money pay_money color_gr">0.00</span></div>
+                            <div class="fr" id="sdpay">支付<span class="red font_52">￥</span><span class="red total_money pay_money font_52">0.00</span></div>
+                        </div>
+                        <div class="nummsg red dis_no orderFailShow"></div>
+                        <!--</p>-->
+                    </div>
+                    <div class="clearfix btnbox">
+                        <div class="enterPhoneShow dis_no"><a href="javascript:void(0);" onclick="phonePay()" class="qmbtn full">确认支付</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
