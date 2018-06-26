@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <title>购物车</title>
 
-    <link href="../static/css/common.css" rel="stylesheet" />
+    <!-- icons.css -->
+    <link href="../static/css/ionicons.css" rel="stylesheet" />
+
+    <!-- font-awesome.css -->
     <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+
 </head>
 <body>
+
+    <!-- 设置pop宽高边距 -->
     <div class="padLR60-30 w878 bgWhite bR-BL20 bR-BR20 bR-TL20">
 
         <!-- 购物车表头 -->
         <div class="h42 lh42 bgf3">
+
+            <!-- 占位 -->
             <div class="fl h42 w150"></div>
+
             <div class="fl h42 w180 fs21 padleft10">名称</div>
+
             <div class="fl h42 w107 fs21 padleft20 mgLeft20">单价</div>
+
             <div class="fl h42 w154 fs21 mgLeft20 tc">数量</div>
+
             <div class="fl h42 w107 fs21 mgLeft20 tr padRight10">小计</div>
         </div>
 
@@ -27,6 +39,7 @@
 
                 <!-- 图片 -->
                 <div class="fl tc w136 h136 borderRadius12 borderAllf3f">
+
                     <img class="h100" src="../static/img/goods11.png" alt="">
                 </div>
 
@@ -36,23 +49,29 @@
                 <!-- 单价 -->
                 <div class="fl tc w107 h42 lh42 fs21 mgLeft20 mgTop47">¥999.50</div>
 
-                <!-- 数量 -->
+                <!-- 数量操作 -->
                 <div class="fl tc w154 h42 lh40 mgLeft20 mgTop47">
+
+                    <!-- 加 -->
                     <a class="db fl h42 w42 borderAllddd borderRadius5">+</a>
+
+                    <!-- 数量 -->
                     <input class="fl h42 w64 fs21 borderAllddd borderRadius5 mgLeft3 bgWhite tc" type="text" value="1" disabled>
+
+                    <!-- 减 -->
                     <a class="db fl h42 w42 borderAllddd borderRadius5 mgLeft3">-</a>
                 </div>
 
                 <!-- 小计 -->
                 <div class="fl tc w107 h42 lh42 fs21 mgLeft20 mgTop47 red-r">¥999.50</div>
-
-
             </div>
+
             <!--循环商品-->
             <div class="h176 padTB20 borderBtm">
 
                 <!-- 图片 -->
                 <div class="fl tc w136 h136 borderRadius12 borderAllf3f">
+
                     <img class="h100" src="../static/img/goods11.png" alt="">
                 </div>
 
@@ -62,33 +81,47 @@
                 <!-- 单价 -->
                 <div class="fl tc w107 h42 lh42 fs21 mgLeft20 mgTop47">¥999.50</div>
 
-                <!-- 数量 -->
+                <!-- 数量操作 -->
                 <div class="fl tc w154 h42 lh40 mgLeft20 mgTop47">
+
+                    <!-- 加 -->
                     <a class="db fl h42 w42 borderAllddd borderRadius5">+</a>
+
+                    <!-- 数量 -->
                     <input class="fl h42 w64 fs21 borderAllddd borderRadius5 mgLeft3 bgWhite tc" type="text" value="1" disabled>
+
+                    <!-- 减 -->
                     <a class="db fl h42 w42 borderAllddd borderRadius5 mgLeft3">-</a>
                 </div>
 
                 <!-- 小计 -->
                 <div class="fl tc w107 h42 lh42 fs21 mgLeft20 mgTop47 red-r">¥999.50</div>
-
-
             </div>
+
         </div>
 
         <!-- 购物车底部 -->
         <div class="h120 lh120 hide">
+
             <!-- 合计 -->
             <div class="fl wb50">
+
                 <span class="fs21">商品合计：</span>
+                <!-- 合计金额 -->
                 <span class="red-r fs29">¥ 9999.99</span>
             </div>
+
+            <!-- 按钮 -->
             <div class="fl wb50 tc">
+
+                <!-- 结算 -->
                 <div class="fr h60 lh60 w150 white borderRadius30 btnBg mgLeft24 mgTop30">结算</div>
+
+                <!-- 清空 -->
                 <div class="fr h60 lh60 w150 borderAllff9 color-ff9 borderRadius30 mgTop30">清空购物车</div>
             </div>
-        </div>
 
+        </div>
 
     </div>
 </body>

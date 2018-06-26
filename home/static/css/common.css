@@ -332,7 +332,8 @@ ul > li {
 .w370{width:370px;}
 .w390{width:390px;}
 .w400{width:400px;}
-.w472{widtH:472px;}
+.w472{width:472px;}
+.w500{width:500px;}
 .w509{width:509px;}
 .w516{width:516px;}
 .w522{width:522px;}
@@ -782,8 +783,8 @@ input{-webkit-appearance: none;}  *//*iphone及ipad下输入框默认内阴影*/
 .cateBgY{background: url('../img/tab_off.png') center top repeat-x;}
 .cateBgN{background: url('../img/tab_on.png') center top repeat-x;}
 .btnBg{background-image: linear-gradient(to top, #ff9766,#fd7e4b);}
-.aliPayBg{background: url(../img/120x120_02.png) center center no-repeat;}
-.wxPayBg{background: url(../img/120x120_01.png) center center no-repeat;}
+.aliPayBg{background: url(../img/alipay.png) center center no-repeat;}
+.wxPayBg{background: url(../img/wxpay.png) center center no-repeat;}
 .cardBg{background: url(../img/card.png) center center;}
 /* 支付方式 */
 .phonePayBg{background:url(../img/phonepay.png) no-repeat top;}
