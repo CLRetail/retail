@@ -6,7 +6,6 @@
 function openPopWin (id , _area){
     int_layer_index=layer.open({
         type: 2,//frame层
-        shadeClose: true,
         title: '',
         shade: 0.4,
         area: _area,

@@ -135,6 +135,7 @@ ul > li {
 .h117{height:117px;}
 .h118{height:118px;}
 .h120{height:120px;}
+.h121{height:121px;}
 .h123{height:123px;}
 .h126{height:126px;}
 .h130{height:130px}
@@ -196,7 +197,9 @@ ul > li {
 .h550{height:550px;}
 .h600{height:600px;}
 .h608{height:608px;}
+.h683{height:683px;}
 .h646{height:646px;}
+.h693{height:693px;}
 .h720{height:720px;}
 .h750{height:750px;}
 .h786{height:786px;}
@@ -288,6 +291,7 @@ ul > li {
 .w112{width:112px}
 .w118{width:118px}
 .w120{width:120px;}
+.w121{width:121px;}
 .w130{width:130px;}
 .w136{width:136px;}
 .w140{width:140px;}
@@ -328,7 +332,8 @@ ul > li {
 .w370{width:370px;}
 .w390{width:390px;}
 .w400{width:400px;}
-.w472{widtH:472px;}
+.w472{width:472px;}
+.w500{width:500px;}
 .w509{width:509px;}
 .w516{width:516px;}
 .w522{width:522px;}
@@ -385,6 +390,7 @@ ul > li {
 .fs37 {font-size: 37px;}
 .fs38 {font-size: 38px;}
 .fs40 {font-size: 40px;}
+.fs42 {font-size: 42px;}
 .fs45 {font-size: 45px;}
 .fs46 {font-size: 46px;}
 .fs54 {font-size: 54px;}
@@ -398,6 +404,7 @@ ul > li {
 
 /** 上边距 **/
 .mgTop136{margin-top:136px;}
+.mgTop108{margin-top:108px;}
 .mgTop102{margin-top:102px;}
 .mgTop100{margin-top:100px;}
 .mgTop97{margin-top:097px;}
@@ -410,7 +417,6 @@ ul > li {
 .mgTop55 {margin-top: 55px;}
 .mgTop50 {margin-top: 50px;}
 .mgTop49 {margin-top: 49px;}
-.mgTop47 {margin-top: 47px;}
 .mgTop46 {margin-top: 46px;}
 .mgTop45 {margin-top: 45px;}
 .mgTop44 {margin-top: 44px;}
@@ -496,6 +502,7 @@ ul > li {
 .mgA05{margin: 05px auto 0}
 .mgA20{margin: 20px auto 0}
 .mgA28{margin: 28px auto 0}
+.mgA47{margin: 47px auto 0}
 .mgA50{margin: 50px auto 0}
 .mgA73{margin: 73px auto 0}
 .mgA0-30{margin: 0 30px}
@@ -512,6 +519,7 @@ ul > li {
 .mgLR04{margin:0 04px;}
 .mgLR25{margin:0 25px;}
 .mgA-Top77{margin:77px auto  0;}
+.mgA-Top87{margin:87px auto  0;}
 /*上下居中*/
 .mgA{margin:auto;}
 /**背景色**/
@@ -625,6 +633,8 @@ ul > li {
 .padLR0{padding: 0; }
 .padLR12{padding: 10px 12px; }
 .padTB20{padding: 20px  0px; }
+.pad60-87{padding: 60px  87px; }
+.pad186-92{padding: 186px 92px;}
 .padRight10{padding-right:10px;}
 .padRight15{padding-right:15px;}
 .padRight20{padding-right:20px;}
@@ -773,16 +783,19 @@ input{-webkit-appearance: none;}  *//*iphone及ipad下输入框默认内阴影*/
 .cateBgY{background: url('../img/tab_off.png') center top repeat-x;}
 .cateBgN{background: url('../img/tab_on.png') center top repeat-x;}
 .btnBg{background-image: linear-gradient(to top, #ff9766,#fd7e4b);}
-.aliPayBg{background: url(../img/120x120_02.png) center center no-repeat;}
-.wxPayBg{background: url(../img/120x120_01.png) center center no-repeat;}
+.aliPayBg{background: url(../img/alipay.png) center center no-repeat;}
+.wxPayBg{background: url(../img/wxpay.png) center center no-repeat;}
 .cardBg{background: url(../img/card.png) center center;}
-
+/* 支付方式 */
 .phonePayBg{background:url(../img/phonepay.png) no-repeat top;}
 .phonePayBg-a{background:url(../img/phonepay-a.png) no-repeat top;}
 .cardPayBg{background:url(../img/cardpay.png) no-repeat top;}
 .cardPayBg-a{background:url(../img/cardpay-a.png) no-repeat top;}
 .QcodePayBg{background:url(../img/Qcodepay.png) no-repeat top;}
 .QcodePayBg-a{background:url(../img/Qcodepay-a.png) no-repeat top;}
+
+/*支付成功*/
+.successBg{background:url(../img/success.png) no-repeat top;}
 
 /* 文本 */
 .ltSpc3{letter-spacing: 3px;}
