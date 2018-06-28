@@ -1,0 +1,25 @@
+1. 项目目录下,初始化空版本库:
+
+   git init
+
+2. 添加要提交的代码
+
+   git add .  ( . 代表改目录下所有文件 )
+
+   git add index.html  (  代表只上传该目录下的index.html文件 )
+
+3. 提交版本库
+
+   git commit -m '注释(英文,中文应该也可以)'
+
+4. 远程连接git版本库
+  
+   git remote add origin https://github/myangeler/CLRetail.git
+
+5. 更新远程库代码
+
+   git pull
+
+6. 上传代码 (master:当前分支库)
+  
+   git push -u origin master
