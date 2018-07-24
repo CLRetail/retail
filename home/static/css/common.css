@@ -123,6 +123,7 @@ ul > li {
 .h87{height:87px;}
 .h88{height:88px;}
 .h90{height:90px;}
+.h92{height:92px;}
 .h94{height:94px;}
 .h96{height:96px;}
 .h97{height:97px;}
@@ -268,7 +269,9 @@ ul > li {
 .w30{width:030px;}
 .w34{width:034px;}
 .w35{width:035px;}
+.w36{width:036px;}
 .w40{width:040px;}
+.w41{width:041px;}
 .w42{width:042px;}
 .w44{width:044px;}
 .w50{width:050px;}
@@ -324,6 +327,7 @@ ul > li {
 .w260{width:260px;}
 .w270{width:270px;}
 .w280{width:280px;}
+.w288{width:288px;}
 .w290{width:290px;}
 .w300{width:300px;}
 .w315{width:315px;}
@@ -341,11 +345,13 @@ ul > li {
 .w580{width:580px;}
 .w630{width:630px;}
 .w645{width:645px;}
+.w655{width:655px;}
 .w660{width:660px;}
 .w690{width:690px;}
 .w700{width:700px;}
 .w720{width:720px;}
 .w750{width:750px;}
+.w776{width:776px;}
 .w839{width:839px;}
 .w878{width:878px;}
 .w944{width:944px;}
@@ -417,6 +423,7 @@ ul > li {
 .mgTop55 {margin-top: 55px;}
 .mgTop50 {margin-top: 50px;}
 .mgTop49 {margin-top: 49px;}
+.mgTop47 {margin-top: 47px;}
 .mgTop46 {margin-top: 46px;}
 .mgTop45 {margin-top: 45px;}
 .mgTop44 {margin-top: 44px;}
@@ -505,6 +512,7 @@ ul > li {
 .mgA47{margin: 47px auto 0}
 .mgA50{margin: 50px auto 0}
 .mgA73{margin: 73px auto 0}
+.mgA0-6{margin: 0 6px}
 .mgA0-30{margin: 0 30px}
 .mgA39{margin: 39px auto}
 .mgA28{margin: 28px auto}
@@ -625,6 +633,7 @@ ul > li {
 .padLR29{padding: 0 29px ; }
 .padLR30{padding: 1px 30px ; }
 .padLR15{padding: 0 15px}
+.padLR16{padding: 0 16px}
 .padLR40{padding: 0 40px ; }
 .padLR60{padding: 1px 060px ; }
 .padLR20-64{padding: 20px 064px 0; }
@@ -796,6 +805,15 @@ input{-webkit-appearance: none;}  *//*iphone及ipad下输入框默认内阴影*/
 
 /*支付成功*/
 .successBg{background:url(../img/success.png) no-repeat top;}
+
+/* 编号 */
+.numBg{ url('../img/num.png') center top repeat-x; }
+
+/* 电话 */
+.phoneBg{ url('../img/phone.png') center top repeat-x; }
+
+/* 温度 */
+.tempBg{ url('../img/temp.png') center top repeat-x; }
 
 /* 文本 */
 .ltSpc3{letter-spacing: 3px;}
