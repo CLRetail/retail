@@ -1,0 +1,39 @@
+1.安装git
+2.执行 git clone https://github.com/electron/electron-quick-start 下载electron 依赖向 到本地
+3.cd electron-quick-start
+4.npm install (报错原因:网络不好)
+
+5.4 == 'err'?
+ a)npm install cnpm -g -- registry=http://registry.npm.taobao.org
+ b)cnpm install electron -g
+:''
+
+6.4 == 'err' ? cnpm start : npm start
+
+7.打包 https://github.com/electron-userland/electron-packager
+
+8.执行 git clone https://github.com/electron-userland/electron-packager // 将electron-packager 下载到本地
+
+9.进入目录 执行 npm install electron-packager -g  // 全局安装
+
+10.配置package.json & main.js
+
+11.执行electron-packager . // 打包
+
+
+loading 动画: http://www.imooc.com/article/1246
+
+
+安装serialport
+
+ 1. npm install -g node-gyp  // 安装(我也不知道是什么)
+
+ 2. node-gyp --python /path/to/python2.7  // 安装 python2.7
+
+ 3. npm install serialport  // 安装node serialport
+
+
+
+问题:
+
+1.设置开机启动
