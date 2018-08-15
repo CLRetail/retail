@@ -792,6 +792,7 @@ input{-webkit-appearance: none;}  *//*iphone及ipad下输入框默认内阴影*/
 .cateBgY{background: url('../img/tab_off.png') center top repeat-x;}
 .cateBgN{background: url('../img/tab_on.png') center top repeat-x;}
 .btnBg{background-image: linear-gradient(to top, #ff9766,#fd7e4b);}
+.btnActBg{background-image:linear-gradient(to top, #ffdb4c,#ffcd03);}
 .aliPayBg{background: url(../img/alipay.png) center center no-repeat;}
 .wxPayBg{background: url(../img/wxpay.png) center center no-repeat;}
 .cardBg{background: url(../img/card.png) center center;}
@@ -817,3 +818,5 @@ input{-webkit-appearance: none;}  *//*iphone及ipad下输入框默认内阴影*/
 
 /* 文本 */
 .ltSpc3{letter-spacing: 3px;}
+
+.line-through{text-decoration:line-through;}

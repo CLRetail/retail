@@ -71,9 +71,16 @@
         <!-- 分类选项 -->
         <div class="bg55 h92 psnR">
 
-            <!-- selected ? 'h60 lh60 fs28 cateBgN' : 'h54 lh54 fs26 cateBgY white' ; idx * width + mg -->
-            <!--<div  v-for="(v,idx) in cate" :class=" [v.selected ? 'h60 lh60 fs28 cateBgN':'h54 lh54 fs26 cateBgY white' ]  +' w200  psnA btm0 topBorderRadius12 tc mgLeft4'" :style="'left:'+[idx  * 204 +4 ]+'px'">{{v.name}}</div>-->
             <div class="h60 lh60 fs28 cateBgN  w200  psnA btm0 topBorderRadius12 tc mgLeft4" >全部</div>
+            <!-- selected ? 'h60 lh60 fs28 cateBgN' : 'h54 lh54 fs26 cateBgY white' ; idx * width + mg -->
+
+            <!-- 循环商品类型 -->
+            <div  v-for="(v,idx) in cate" :class=" [v.selected ? 'h60 lh60 fs28 cateBgN':'h54 lh54 fs26 cateBgY white' ]  +' w200  psnA btm0 topBorderRadius12 tc mgLeft4'" :style="'left:'+[idx  * 204 +4 ]+'px'">{{v.name}}</div>
+
+            <!-- 循环活动类型 -->
+            <div  v-for="(v,idx) in activities" :class=" [v.selected ? 'h60 lh60 fs28 cateBgN':'h54 lh54 fs26 btnActBg ' ]  +' color-333 w200  psnA btm0 topBorderRadius12 tc mgLeft4'" :style="'left:'+[ (cate.length  + idx) * 204 +4 ]+'px'">{{v.name}}</div>
+
+
         </div>
 
         <!-- 商品列表 容器-->
@@ -90,6 +97,9 @@
                 <!-- 商品 item 此处循环 -->
                 <div class=" tc mgLeft8 w230 padTop20 bgWhite psnR fl mgTop30">
 
+                    <!-- 标签图片 新品 -->
+                    <img src="static/img/new.png" class="psnA top0 right0" alt="">
+
                     <!-- 商品图片 -->
                     <img src="static/img/goods11.png" class="h184" alt="">
 
@@ -97,7 +107,28 @@
                     <div class="h51 lh51 tc fs20">可薯片</div>
 
                     <!-- 按钮 -->
-                    <div class="buyBg w220 mgAuto tc h40 lh40 borderRadius6 white">¥0.01　购买</div>
+                    <div class="buyBg fs20 w220 mgAuto tc h40 lh40 borderRadius6 white"><span class="fs16 line-through">原价:<i>￥</i>0.02</span>&nbsp;&nbsp;¥0.01</div>
+
+                    <div class="h5"></div>
+
+                    <!-- 加入购物车按钮 -->
+                    <div class="white bgFB borderAllF89 boderRadiusB100 w42 h42 tc lh40 fs32 b1 psnA btm78 right5">＋</div>
+                </div>
+
+                <!-- 商品 item 此处循环 -->
+                <div class=" tc mgLeft8 w230 padTop20 bgWhite psnR fl mgTop30">
+
+                    <!-- 标签图片 新品 -->
+                    <img src="static/img/import.png" class="psnA top0 right0" alt="">
+
+                    <!-- 商品图片 -->
+                    <img src="static/img/goods11.png" class="h184" alt="">
+
+                    <!-- 商品名称 -->
+                    <div class="h51 lh51 tc fs20">可薯片</div>
+
+                    <!-- 按钮 -->
+                    <div class="buyBg fs20 w220 mgAuto tc h40 lh40 borderRadius6 white">¥0.01</div>
 
                     <div class="h5"></div>
 
@@ -115,7 +146,7 @@
                     <div class="h51 lh51 tc fs20">可薯片</div>
 
                     <!-- 按钮 -->
-                    <div class="buyBg w220 mgAuto tc h40 lh40 borderRadius6 white">¥0.01　购买</div>
+                    <div class="buyBg fs20 w220 mgAuto tc h40 lh40 borderRadius6 white">¥0.01</div>
 
                     <div class="h5"></div>
 
@@ -133,7 +164,7 @@
                     <div class="h51 lh51 tc fs20">可薯片</div>
 
                     <!-- 按钮 -->
-                    <div class="buyBg w220 mgAuto tc h40 lh40 borderRadius6 white">¥0.01　购买</div>
+                    <div class="buyBg fs20 w220 mgAuto tc h40 lh40 borderRadius6 white">¥0.01</div>
 
                     <div class="h5"></div>
 
@@ -151,25 +182,7 @@
                     <div class="h51 lh51 tc fs20">可薯片</div>
 
                     <!-- 按钮 -->
-                    <div class="buyBg w220 mgAuto tc h40 lh40 borderRadius6 white">¥0.01　购买</div>
-
-                    <div class="h5"></div>
-
-                    <!-- 加入购物车按钮 -->
-                    <div class="white bgFB borderAllF89 boderRadiusB100 w42 h42 tc lh40 fs32 b1 psnA btm78 right5">＋</div>
-                </div>
-
-                <!-- 商品 item 此处循环 -->
-                <div class=" tc mgLeft8 w230 padTop20 bgWhite psnR fl mgTop30">
-
-                    <!-- 商品图片 -->
-                    <img src="static/img/goods11.png" class="h184" alt="">
-
-                    <!-- 商品名称 -->
-                    <div class="h51 lh51 tc fs20">可薯片</div>
-
-                    <!-- 按钮 -->
-                    <div class="buyBg w220 mgAuto tc h40 lh40 borderRadius6 white">¥0.01　购买</div>
+                    <div class="buyBg fs20 w220 mgAuto tc h40 lh40 borderRadius6 white">¥0.01</div>
 
                     <div class="h5"></div>
 
@@ -220,27 +233,32 @@
 <script>
 
 
-    // new Vue({
-    //     el:'.page',
-    //     data:{
-    //         cate:[],
-    //     },
-    //     mounted:function(){
-    //
-    //         this.getCate();
-    //     },
-    //     methods:{
-    //         getCate:function(){
-    //
-    //             let data=[
-    //                 {name:'全部',id:'',selected:true},
-    //                 {name:'饮品饮料',id:'',selected:false},
-    //                 {name:'日化用品',id:'',selected:false},
-    //                 {name:'药物',id:'',selected:false}
-    //             ];
-    //
-    //             this.cate=data;
-    //         },
-    //     }
-    // })
+    new Vue({
+        el:'.page',
+        data:{
+            cate:[],// 分类
+            activities:[] // 活动
+        },
+        mounted:function(){
+
+            this.getCate();
+        },
+        methods:{
+            getCate:function(){
+
+                let data=[
+                    {name:'全部',id:'',selected:true},
+                    {name:'饮品饮料',id:'',selected:false},
+                    {name:'日化用品',id:'',selected:false}
+                ];
+                let datas=[
+                    {name:'今日特价',id:1,selected:false},
+                ];
+
+                this.cate=data;
+
+                this.activities = datas;
+            },
+        }
+    })
 </script>
